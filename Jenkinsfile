@@ -9,13 +9,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh "mvm clean compile"
+            sh "mvm clean compile"
             }
         }
         stage('Test') {
-                    steps {
-                        sh "mvm test"
-                    }
-                }
+            steps {
+            sh "mvm test"
+            }
+        }
     }
 }
